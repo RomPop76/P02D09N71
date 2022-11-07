@@ -34,7 +34,6 @@
     .col {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
         background-color: darkgrey;
         font-family: Arial, Helvetica, sans-serif;
         height: 70vh;
@@ -43,7 +42,6 @@
 
     .col h2 {
         margin: 20px auto;
-
     }
     .col img {
         width: 65%;
@@ -53,9 +51,12 @@
     .col p {
         text-align: center;
         margin: 20px auto; 
-        /* flex-grow: 2; */
     }
 
+    .col p:nth-last-child(2) {
+        flex-grow: 2;
+        align-items: stretch;
+    }
     .price {
         background-color: white;
         width: 80%;
@@ -63,8 +64,6 @@
         border: 2px solid black;
     }
  
-   
-
  </style>
 </head>
 
